@@ -1,0 +1,60 @@
+    <!DOCTYPE html>
+    
+    <html lang="en-US">
+    <head>
+        <!--
+        *****************************************************************************
+        Title: Contact Page
+        Use: To allow users to fill out and submit the contact form.
+        Author: Caleb McSparin
+        School/Term: Southern Illinois University, Spring 2019
+        Developed: Feb 3, 2019
+        Tested: Feb 4, 2019; Passed on Firefox and Chrome browsers.
+        ******************************************************************************
+    -->
+            <meta charset="utf-8">
+            <title>Contact Us</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+        
+    <body>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="movies.htm">Movies</a></li>
+                <li><a href="showtimes.htm">Showtimes</a></li>
+                <li><a href="pricing.htm">Pricing</a></li>
+                <li><a href="contact.htm">Contact us</a></li>
+            </ul>
+        </nav> 
+        <h1>Contact us</h1>
+        <form id="contact_form" action="response.htm" method="post">
+        <label>Movie Name: </label> <input type="text" id="movie_name" required pattern="[0-9 A-Za-z]{2,50}" placeholder="The Irishman"><br>
+        <label>Director's Name</label> <input type="text" id="full_name" required pattern="[A-Za-z A-Za-z]{13,25}" placeholder="Martin Scorsese"><br>
+        <label>Your Full Name:</label> <input type="text" id="full_name" required pattern="[A-Za-z A-Za-z]{13,25}" placeholder="John Smith"><br>
+            <label>Address:</label> <input type="text" id="address" required pattern="[0-9 A-Za-z]{15,50}" placeholder="123 Main Street"><br>
+            <label>City:</label> <input type="text" id="city" required pattern="[A-Za-z]{4,25}" placeholder="Chicago"><br>
+            <label>State:</label>
+            <select id="state">
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="KY">Kentucky</option>
+                <option value="MO">Missouri</option>
+                <option value="WI">Wisconsin</option>
+            </select><br>
+            <label>Zip Code:</label>
+            <input type="text" id="zip" required pattern="\d{5}({\-}\d{4})?" title="Must be 99999 or 99999-9999" placeholder="60601"><br>
+            <label>Phone:</label>
+            <input type="tel" id="phone_number" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999" placeholder="555-555-1234"><br>
+            <label>Email:</label>
+            <input type="email" id="email" required pattern="[a-zA-Z0-9][\@][a-z]{10,25}" placeholder="jsmith98@example.com"><br>
+            <label>Current Date:</label>
+            <input type="date" id="sub_date" required pattern="[01]?\d\/[0-3]\d\/\d{4}" title="MM/DD/YYYY"><br><br>
+            <label>Message</label><br>
+            <textarea id="message" required maxlength="200" placeholder="Why whould you like to see this film?"></textarea>
+            
+            
+            <p><input type="submit" id="submit" value="Submit"> <input type="reset" id="resetform" value="Reset"></p>
+        </form>
+    </body>
+    </html>

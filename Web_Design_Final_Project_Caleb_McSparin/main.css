@@ -1,0 +1,86 @@
+*{
+    margin: 0.625em;
+    
+}
+
+body{
+    width: 80%;
+}
+
+p{
+    padding: 0.625em;
+}
+
+li{
+    padding-bottom: 0.3125em;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: .2em .7em;
+    text-align: center;
+    
+}
+h1{
+    clear: both;
+    padding: 10px;
+}
+
+.movie_poster{
+    max-height: 20em;
+    max-width: inherit;
+}
+.movie{
+    max-width: 22.5em;
+}
+
+#main_pic{
+    width: inherit;
+    max-width: 40em;
+}
+
+#nav_menu ul{list-style-type: none;}
+#nav_menu ul li {float: left;}
+#nav_menu ul li a{
+    text-align: center;
+    display: block;
+    width: 10.9375em;
+    padding: 1em 0;
+    background-color: red;
+    color: white;
+}
+
+#movie1{
+    
+    flex-basis: 25%;
+}
+
+#movie2{
+    
+    flex-basis: 25%;
+}
+
+#movie3{
+    
+    flex-basis: 25%;
+}
+
+#movie4{
+    flex-basis: 25%;
+}
+
+.yes{
+    background-color: green;
+}
+.no{
+    background-color: red;
+}
